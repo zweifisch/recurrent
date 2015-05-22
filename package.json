@@ -1,0 +1,25 @@
+{
+  "name": "recurrent",
+  "version": "0.1.0",
+  "description": "observe recurrent events",
+  "main": "recurrent.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zweifisch/recurrent.git"
+  },
+  "keywords": [
+    "recurrent"
+  ],
+  "author": "zf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zweifisch/recurrent/issues"
+  },
+  "homepage": "https://github.com/zweifisch/recurrent#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
