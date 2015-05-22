@@ -11,7 +11,8 @@
     "url": "git://github.com/zweifisch/resignal.git"
   },
   "keywords": [
-    "recurrent"
+    "recurrent",
+    "event"
   ],
   "author": "zf",
   "license": "MIT",
