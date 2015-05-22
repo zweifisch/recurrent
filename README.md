@@ -1,9 +1,9 @@
-# recurrent
+# resignal
 
 observe recurrent events
 
 ```javascript
-var observer = recurrent(3/*times*/, 60/*seconds*/);
+var observer = resignal(3/*times*/, 60/*seconds*/);
 
 observer.on("occured", function() {
     console.log("occoured");

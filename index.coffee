@@ -1,5 +1,5 @@
 
-recurrent = (times, timespan)->
+resignal = (times, timespan)->
 
     timespan = timespan * 1000
     log = []
@@ -21,4 +21,4 @@ recurrent = (times, timespan)->
             cb() for cb in callbacks.report
             log = []
 
-module.exports = recurrent
+module.exports = resignal

@@ -1,10 +1,10 @@
-recurrent = require "./recurrent"
+resignal = require "./index"
 
-describe "recurrent", ->
+describe "resignal", ->
 
     it "should report", (done)->
 
-        observer = recurrent 3, 10
+        observer = resignal 3, 10
         observer.on "report", ->
             done()
 
@@ -15,7 +15,7 @@ describe "recurrent", ->
 
     it "should not report", (done)->
 
-        observer = recurrent 3, 10
+        observer = resignal 3, 10
         observer.on "report", ->
             done("error")
 
@@ -26,7 +26,7 @@ describe "recurrent", ->
     
     it "should not report", (done)->
 
-        observer = recurrent 3, 0.02
+        observer = resignal 3, 0.02
         observer.on "report", ->
             done("error")
 
@@ -38,7 +38,7 @@ describe "recurrent", ->
 
     it "should report twice", (done)->
 
-        observer = recurrent 2, 10
+        observer = resignal 2, 10
         times = 0
         observer.on "report", ->
             times += 1
